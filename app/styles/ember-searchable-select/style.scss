@@ -15,6 +15,7 @@ $searchable-select-spacer-horizontal: 1em;
     list-style: none;
     line-height: 1.2;
     padding: 0.6em $searchable-select-spacer-horizontal--has-icon;
+    display: flex;
   }
 
   &__label {
@@ -179,6 +180,11 @@ $searchable-select-spacer-horizontal: 1em;
     cursor: pointer;
     position: relative;
 
+    &-label {
+      display: block;
+      align-self: center;
+    }
+
     &--selected{background: $searchable-select-item-bg--selected;}
 
     &:hover,
@@ -196,8 +202,7 @@ $searchable-select-spacer-horizontal: 1em;
   &__icon {
     position: absolute;
     left: 0.6em;
-    top: 50%;
-    transform: translateY(-0.6em);
+    align-self: center;
 
     &__check {
       color: #8c8c8c;
@@ -207,6 +212,18 @@ $searchable-select-spacer-horizontal: 1em;
       font-size: 1.3em;
       font-weight: bold;
     }
+  }
+
+  &__image {
+    img {
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+    }
+    display: block;
+    align-self: center;
+    margin-right: 0.6em;
   }
 
   &__matched-text {

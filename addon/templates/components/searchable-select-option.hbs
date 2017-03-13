@@ -4,7 +4,12 @@
     &#10003;
   </span>
 {{/if}}
-
+{{#if iconAvailable}}
+{{!--  http://is4.mzstatic.com/image/thumb/Purple91/v4/55/62/44/556244f0-8790-3c2e-e9ef-d4a12b07dda1/source/60x60bb.jpg --}}
+<span class="Searchable-select__image">
+  <img src="{{appImage60}}" alt="App Icon">
+</span>
+{{/if}}
 <span class="Searchable-select__option-label
   {{if isSelected 'Searchable-select__option-label--selected'}}">
   {{searchable-select-highlight-match
